@@ -1,0 +1,26 @@
+
+# path
+export PATH=$PATH:/Applications/Xcode.app/Contents/Developer/usr/bin
+
+# prompt
+PS1='[mba@\W$(__git_ps1 " (%s)")]\$ '
+
+# ignore upper case
+shopt -s nocaseglob
+
+# EDITOR
+export EDITOR="/usr/bin/emacs"
+
+# lang
+export LANG=ja_JP.utf8
+export LESSCHARSET=utf-8
+export LC_ALL="ja_JP.UTF-8"
+
+# utility
+alias 2utf8='nkf -Lu --utf8 --overwrite'
+alias gitls='git status'
+
+# bash completion
+if [ "${PS1}" -a -e /etc/profile.d/bash-completion ] ; then 
+    source /etc/profile.d/bash-completion
+fi

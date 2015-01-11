@@ -28,9 +28,6 @@ umask 022
 #unset LANG
 #export LANG=ja_JP
 
-# prompt
-#PS1="[\u@\W]\$ "
-
 # ========================================================
 # aliases
 
@@ -42,13 +39,7 @@ alias mv='mv -i '
 alias rm='rm -i '
 
 alias ..='cd ..'
-
-alias gitls='git status'
-
-alias 2utf8='nkf -Lu --utf8 --overwrite'
-
-alias sakura='ssh ogaoga@ogaoga.sakura.ne.jp'
-alias vps='ssh ogaoga@219.94.255.239'
+alias o='open'
 
 # source
 source $HOME/.dotfiles/git-completion.bash
