@@ -51,7 +51,8 @@ alias sakura='ssh ogaoga@ogaoga.sakura.ne.jp'
 alias vps='ssh ogaoga@219.94.255.239'
 
 # source
-source $HOME/git-completion.bash
+source $HOME/.dotfiles/git-completion.bash
+source $HOME/.dotfiles/git-flow-completion.bash
 
 # ========================================================
 # local

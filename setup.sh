@@ -1,3 +1,4 @@
 #!/bin/sh
-cd ~
-ln -s ~/.dotfiles/.bashrc
+
+cd $HOME
+ln -s $HOME/.dotfiles/.bashrc
