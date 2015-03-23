@@ -1,3 +1,9 @@
+# Mac
 .DS_Store
+
+# Bash
 .bashrc_local
 .bashrc_private
+
+# emacs
+.emacs.d/kkcrc
