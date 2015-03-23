@@ -3,7 +3,7 @@
 export PATH=$PATH:/Applications/Xcode.app/Contents/Developer/usr/bin
 
 # prompt
-PS1='[mba@\W$(__git_ps1 " (%s)")]\$ '
+PS1='[\h@\W$(__git_ps1 " (%s)")]\$ '
 
 # ignore upper case
 #shopt -s nocaseglob
