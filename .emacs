@@ -47,7 +47,7 @@
 ;(global-set-key "\C-h" 'delete-backward-char)
 ;(global-set-key "[del]" 'delete-backward-char)
 (global-set-key "\C-z" 'undo)
-(global-set-key "\C-x\C-j" 'toggle-input-method)
+;(global-set-key "\C-x\C-j" 'toggle-input-method)
 (global-set-key "\C-l" 'set-mark-command)
 
 ;(global-set-key "\C-j" 'dabbrev-completion)
@@ -64,18 +64,3 @@
 
 ; Don't generate a temporary file
 (setq backup-inhibited t)
-
-;; utf-8
-;; 
-(set-language-environment 'Japanese)
-; (set-terminal-coding-system 'utf-8)
-; (setq file-name-coding-system 'utf-8)
-; (set-clipboard-coding-system 'utf-8)
-; (setq default-buffer-file-coding-system 'utf-8)
-; (setq coding-system-for-read 'mule-utf-8-unix)
-; (prefer-coding-system 'utf-8)
-(set-default-coding-systems 'utf-8)
-; (set-keyboard-coding-system 'utf-8)
-(set-buffer-file-coding-system 'utf-8)
-
-
