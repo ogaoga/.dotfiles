@@ -6,7 +6,7 @@ export PATH=$PATH:/Applications/Xcode.app/Contents/Developer/usr/bin
 PS1='[mba@\W$(__git_ps1 " (%s)")]\$ '
 
 # ignore upper case
-shopt -s nocaseglob
+#shopt -s nocaseglob
 
 # EDITOR
 export EDITOR="/usr/bin/emacs"
