@@ -1,0 +1,160 @@
+;;
+;;
+
+;; font
+;(set-default-font "Bitstream Vera Sans Mono-11")
+;(set-default-font "Sazanami Gothic-12")
+;(set-default-font "Monospace-11")
+
+; riece
+(autoload 'riece "riece" "Start Riece" t)
+
+;; ------------------
+
+;; 
+;;(autoload 'html-helper-mode "html-helper-mode" "Yay HTML" t)
+;;(setq auto-mode-alist
+;;      (append
+;;       '(
+;;	 ("\\.h$"    . c++-mode)
+;;	 ("\\.hpp$"  . c++-mode)
+;;	 ("\\.txt$"  . text-mode)
+;;	 ("\\.message$" . text-mode)
+;;	 ("\\.shtml$" . html-helper-mode)
+;;		 	 ("\\.php$" . html-helper-mode)
+;;	 ("\\.tpl" . html-helper-mode)
+;;	 ("\\.thtml" . html-helper-mode)
+;;	 ("\\.php" . php-mode)
+;;	 ("\\.ctp" . php-mode)
+;;	 ("\\.html" . html-mode)
+;;	 ) auto-mode-alist))
+
+(autoload 'html-helper-mode "html-helper-mode")
+(setq auto-mode-alist
+      (cons '("\\.\\(html\\|thtml\\|tpl\\)$" . html-mode) auto-mode-alist))
+
+;;; RELAX NG
+;;(autoload 'xml-mode "psgml" "Major mode to edit XML files." t)
+;;(setq auto-mode-alist
+;;      (append
+;;       '(("\\.\\(tpl\\|thtml\\|ctp\\)$" . xml-mode))
+;;       auto-mode-alist))
+
+(autoload 'php-mode "php-mode" "php-mode")
+(setq auto-mode-alist
+      (cons '("\\.\\(ctp\\|php\\)$" . php-mode) auto-mode-alist))
+
+(autoload 'xml-mode "psgml")
+(setq auto-mode-alist
+      (cons '("\\.\\(xml\\|xml\\)$" . xml-mode) auto-mode-alist))
+
+;; javascript-mode
+(add-to-list 'auto-mode-alist '("\\.js$" . javascript-mode))
+(autoload 'javascript-mode "javascript" nil t)
+(add-hook 'javascript-mode-hook
+          (function
+           (lambda ()
+           (setq tab-width 2))))
+
+;(autoload 'javascript-mode "javascript-mode")
+;(setq auto-mode-alist
+;      (cons '("\\.\\(js\\|js\\)$" . javascript-mode) auto-mode-alist))
+
+;; js2 mode
+;(autoload 'js2-mode "js2-mode" nil t)
+;(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+;(setq js2-mode-hook
+;    '(lambda ()
+;        (setq js2-basic-offset 2)
+;        (setq tab-width 2)))
+
+;; css mode
+(autoload 'css-mode "css-mode")
+(setq auto-mode-alist (cons '("\\.\\(css\\|less\\|scss\\)$" . css-mode) auto-mode-alist))
+(setq indent-tabs-mode nil)
+(setq javascript-indent-level 2)
+(setq javascript-basic-offset tab-width)
+(setq cssm-indent-function #'cssm-c-style-indenter)
+
+;; sass mode
+; (setq exec-path (cons (expand-file-name "/usr/bin") exec-path))
+; (add-to-list 'load-path (expand-file-name "~/.emacs.d/scss-mode.el"))
+; (autoload 'scss-mode "scss-mode")
+; (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+
+;; markdown mode
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; jade and stylus
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(require 'sws-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; colors
+(if window-system (progn
+  (set-foreground-color "black")
+  ;;(set-background-color "cornsilk")
+  ;;(set-face-foreground 'modeline "white")
+  ;;(set-face-background 'modeline "MediumPurple2")
+  ;;(set-cursor-color "MediumPurple2")
+  ;;(set-mouse-color  "MediumPurple2")
+))
+
+;; key bind
+(keyboard-translate ?\C-h ?\C-?)
+
+;;
+;; prime
+;;
+;;; MELL (Emacs Lisp)
+;(require 'init-mell)
+;;;; Suikyo 
+;(require 'init-suikyo)
+;;;; PRIME for Emacs
+;(require 'init-prime)
+;;;; leim
+;(setq default-input-method "japanese-prime")
+
+;;
+;; dmacro
+;;
+;; (defconst *dmacro-key* "\C-t" "Repeat key")
+;; (global-set-key *dmacro-key* 'dmacro-exec)
+;; (autoload 'dmacro-exec "dmacro" nil t)
+
+;; emmet
+;; http://qiita.com/ironsand/items/55f2ced218949efbb1fb
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode)
+;;(add-hook 'css-mode-hook  'emmet-mode)
+;;(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
+;;(eval-after-load "emmet-mode"
+;;  '(define-key emmet-mode-keymap (kbd "C-j") nil))
+;;(keyboard-translate ?\C-i ?\H-i)
+;;(define-key emmet-mode-keymap (kbd "H-i") 'emmet-expand-line)
+
+;; ====================================================================
+;; Don't touch the followings:
+;; ====================================================================
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom -- don't edit or cut/paste it!
+  ;; Your init file should contain only one such instance.
+ '(auto-compression-mode t nil (jka-compr))
+ '(case-fold-search t)
+ '(column-number-mode t)
+ '(current-language-environment "Japanese")
+ ;'(default-input-method "japanese")
+ '(global-font-lock-mode t nil (font-lock))
+ '(standard-indent 2)
+ '(tool-bar-mode nil nil (tool-bar)))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom -- don't edit or cut/paste it!
+  ;; Your init file should contain only one such instance.
+ )
