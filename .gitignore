@@ -7,3 +7,6 @@
 
 # emacs
 .emacs.d/kkcrc
+
+# Other configs
+.gitconfig
