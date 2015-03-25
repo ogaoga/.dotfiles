@@ -9,6 +9,7 @@
 .emacs.d/kkcrc
 .emacs.d/auto-save-list/
 .emacs.d/elpa/
-  
+.emacs.d/.cask/
+
 # Other configs
 .gitconfig

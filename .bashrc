@@ -21,6 +21,9 @@ umask 022
 # ========================================================
 # exports
 
+# Path
+export PATH="$HOME/.cask/bin:$PATH"
+
 #export PAGER=less
 
 # Delete LANG

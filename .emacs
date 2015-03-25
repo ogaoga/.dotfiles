@@ -10,6 +10,10 @@
 ;; load local settings
 ;(load "~/.emacs_local")
 
+;; cask
+(require 'cask)
+(cask-initialize)
+
 ;(setq completion-ignore-case t)
 (setq read-file-name-completion-ignore-case t)
 
@@ -64,6 +68,9 @@
 
 ; Don't generate a temporary file
 (setq backup-inhibited t)
+
+;; editorconfig
+(setq edconf-exec-path "/usr/local/bin/editorconfig")
 
 ;; --- mode ---
 
