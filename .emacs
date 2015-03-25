@@ -64,3 +64,11 @@
 
 ; Don't generate a temporary file
 (setq backup-inhibited t)
+
+;; --- mode ---
+
+;; Jade (Stylus)
+(require 'stylus-mode)
+(require 'jade-mode)
+(add-to-list 'auto-mode-alist '("\\.styl$" . stylus-mode))
+(add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))

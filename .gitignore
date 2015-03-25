@@ -7,6 +7,8 @@
 
 # emacs
 .emacs.d/kkcrc
-
+.emacs.d/auto-save-list/
+.emacs.d/elpa/
+  
 # Other configs
 .gitconfig
