@@ -5,6 +5,11 @@ Requirement
 * Cask for Emacs.
   * http://cask.readthedocs.org/
 
+Not supported
+====
+
+* markdown-mode
+
 ToDo
 ====
 
