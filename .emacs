@@ -68,6 +68,10 @@
 
 ; Don't generate a temporary file
 (setq backup-inhibited t)
+; Don't generate *.~
+(setq make-backup-files nil)
+; Don't generate .#*
+(setq auto-save-default nil)
 
 ;; editorconfig
 (setq edconf-exec-path "/usr/local/bin/editorconfig")
