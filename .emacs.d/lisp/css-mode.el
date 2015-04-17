@@ -168,7 +168,7 @@ C-style indentation, use cssm-c-style-indenter.")
 
 ;;; Cross-version compatibility layer
 
-(when (not (or (apropos-macrop 'kbd)
+(when (not (or (macrop 'kbd)
 	     (fboundp 'kbd)))
     (defmacro kbd (keys)
       "Convert KEYS to the internal Emacs key representation.
