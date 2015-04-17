@@ -12,3 +12,6 @@ ln -s $DOTFILESDIR/.emacs
 ln -s $DOTFILESDIR/.emacs.d
 cp -n $DOTFILESDIR/.gitconfig.template    $DOTFILESDIR/.gitconfig
 ln -s $DOTFILESDIR/.gitconfig
+
+brew install cask
+brew install bash_completion
