@@ -4,6 +4,8 @@ Requirement
 
 * Cask for Emacs.
   * http://cask.readthedocs.org/
+* bash-completion
+  * $ brew install bash-completion
 
 Not supported
 ====
@@ -14,7 +16,6 @@ ToDo
 ====
 
 * inputrc
-* emacs
 
 License
 ====

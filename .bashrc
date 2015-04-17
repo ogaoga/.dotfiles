@@ -31,6 +31,11 @@ export PATH="$HOME/.cask/bin:$PATH"
 #unset LANG
 #export LANG=ja_JP
 
+# bash completion
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
 # ========================================================
 # aliases
 
