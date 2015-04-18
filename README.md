@@ -4,8 +4,11 @@ Requirement
 
 * Cask for Emacs.
   * http://cask.readthedocs.org/
+  * `$ cask install`
+* EditorConfig
+  * `$ brew install editorconfig`
 * bash-completion
-  * $ brew install bash-completion
+  * `$ brew install bash-completion`
 
 Not supported
 ====

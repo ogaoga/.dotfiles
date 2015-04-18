@@ -15,3 +15,7 @@ ln -s $DOTFILESDIR/.gitconfig
 
 brew install cask
 brew install bash_completion
+brew install editorconfig
+
+cd $DOTFILESDIR/.emacs.d
+cask install
