@@ -49,6 +49,8 @@ alias rm='rm -i '
 alias ..='cd ..'
 alias o='open'
 
+alias simpleHTTPServer='python -m SimpleHTTPServer'
+
 # source
 source $HOME/.dotfiles/git-completion.bash
 source $HOME/.dotfiles/git-flow-completion.bash

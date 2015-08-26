@@ -41,7 +41,7 @@
 ;; cursor
 (setq cursor-type 'hbar) ;; underline
 
-;; recent 
+;; recent
 ;(require 'recentf)
 ;(recentf-mode 1)
 
@@ -59,7 +59,7 @@
 
 ;; tab
 ;;(setq-default tab-width 2)
-;;(setq tab-width 2) 
+;;(setq tab-width 2)
 (setq-default tab-width 2 indent-tabs-mode nil)
 (setq tab-width 2 indent-tabs-mode nil)
 
@@ -90,3 +90,7 @@
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+;; JSX
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
