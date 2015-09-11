@@ -49,6 +49,8 @@ alias rm='rm -i '
 alias ..='cd ..'
 alias o='open'
 
+alias vps='ssh ogaoga@219.94.255.239'
+
 # source
 source $HOME/.dotfiles/git-completion.bash
 source $HOME/.dotfiles/git-flow-completion.bash
