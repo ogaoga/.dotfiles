@@ -10,16 +10,6 @@ Requirement
 * bash-completion
   * `$ brew install bash-completion`
 
-Not supported
-====
-
-* markdown-mode
-
-ToDo
-====
-
-* inputrc
-
 License
 ====
 

@@ -50,6 +50,7 @@ alias ..='cd ..'
 alias o='open'
 
 alias vps='ssh ogaoga@219.94.255.239'
+alias simpleHTTPServer='python -m SimpleHTTPServer'
 
 # source
 source $HOME/.dotfiles/git-completion.bash
