@@ -49,8 +49,9 @@ alias rm='rm -i '
 alias ..='cd ..'
 alias o='open'
 
-alias vps='ssh ogaoga@219.94.255.239'
 alias simpleHTTPServer='python -m SimpleHTTPServer'
+alias gitls='git status'
+alias 2utf8='nkf -Lu --utf8 --overwrite'
 
 # source
 source $HOME/.dotfiles/git-completion.bash
