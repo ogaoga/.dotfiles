@@ -24,3 +24,7 @@ alias gitls='git status'
 if [ "${PS1}" -a -e /etc/profile.d/bash-completion ] ; then 
     source /etc/profile.d/bash-completion
 fi
+
+# nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

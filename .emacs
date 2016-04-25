@@ -74,7 +74,8 @@
 (setq auto-save-default nil)
 
 ;; editorconfig
-(setq edconf-exec-path "/usr/local/bin/editorconfig")
+;(setq edconf-exec-path "/usr/local/bin/editorconfig")
+(editorconfig-mode 1)
 
 ;; --- mode ---
 
@@ -83,6 +84,11 @@
 (require 'jade-mode)
 (add-to-list 'auto-mode-alist '("\\.styl$" . stylus-mode))
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
+
+;; Sass
+(require 'sass-mode)
+(add-to-list 'auto-mode-alist '("\\.scss$" . sass-mode))
+(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
 
 ;; Markdown
 (autoload 'markdown-mode "markdown-mode"
