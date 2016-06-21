@@ -9,7 +9,9 @@ Requirement
   * `$ brew install editorconfig`
 * bash-completion
   * `$ brew install bash-completion`
-
+* maltimarkdonw
+  * `$ brew install multimarkdown`
+  
 License
 ====
 

@@ -77,6 +77,9 @@
 ;(setq edconf-exec-path "/usr/local/bin/editorconfig")
 (editorconfig-mode 1)
 
+;; Markdown
+(setq markdown-command "multimarkdown")
+
 ;; --- mode ---
 
 ;; Jade (Stylus)
