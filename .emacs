@@ -75,7 +75,7 @@
 
 ;; editorconfig
 ;(setq edconf-exec-path "/usr/local/bin/editorconfig")
-(editorconfig-mode 1)
+;(editorconfig-mode 1)
 
 ;; Markdown
 (setq markdown-command "multimarkdown")
@@ -103,3 +103,4 @@
 ;; JSX
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
