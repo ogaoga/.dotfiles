@@ -41,6 +41,19 @@
 ;; cursor
 (setq cursor-type 'hbar) ;; underline
 
+;; Scroll
+;(setq scroll-step 1)
+(setq scroll-conservatively 1)
+(setq scroll-margin 8)
+(setq scroll-preserve-screen-position t)
+
+;; Do not return at right edge
+(setq-default truncate-lines t)
+(setq truncate-partial-width-windows t)
+
+;; Do not add new line at the end of document.
+(setq next-line-add-newlines nil)
+
 ;; recent
 ;(require 'recentf)
 ;(recentf-mode 1)
@@ -100,7 +113,8 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;; JSX
+;; Web mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
