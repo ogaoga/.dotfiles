@@ -2,8 +2,12 @@
 Requirement
 ====
 
+* Homebrew
+  * http://brew.sh/
 * Cask for Emacs.
   * http://cask.readthedocs.org/
+  * Cask requires Emacs 24+.
+    * `$ brew install emacs`
   * `$ cask install`
 * EditorConfig
   * `$ brew install editorconfig`
