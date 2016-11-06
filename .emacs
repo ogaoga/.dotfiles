@@ -5,6 +5,13 @@
 ;;
 
 ;;; add macro search path
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq load-path (append '("~/.emacs.d/lisp") load-path))
 
 ;; load local settings
@@ -120,5 +127,5 @@
 (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
 
 ;; Web mode
-(require 'mustache-mode)
-(add-to-list 'auto-mode-alist '("\\.mustache\\'" . mustache-mode))
+;(require 'mustache-mode)
+;(add-to-list 'auto-mode-alist '("\\.mustache\\'" . mustache-mode))
