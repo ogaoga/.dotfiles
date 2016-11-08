@@ -59,6 +59,13 @@ alias simpleHTTPServer='python -m SimpleHTTPServer'
 alias gitls='git status'
 alias 2utf8='nkf -Lu --utf8 --overwrite'
 
+# diff
+if [[ -x `which colordiff` ]]; then
+    alias diff='colordiff -u'
+else
+    alias diff='diff -u'
+fi
+
 # source
 source $HOME/.dotfiles/git-completion.bash
 source $HOME/.dotfiles/git-flow-completion.bash
