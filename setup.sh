@@ -17,6 +17,7 @@ brew install cask
 brew install bash_completion
 brew install editorconfig
 brew install multimarkdown
+brew install colordiff
 
 cd $DOTFILESDIR/.emacs.d
 cask install
