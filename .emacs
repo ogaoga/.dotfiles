@@ -94,8 +94,8 @@
 (setq auto-save-default nil)
 
 ;; editorconfig
-;(setq edconf-exec-path "/usr/local/bin/editorconfig")
-;(editorconfig-mode 1)
+(setq edconf-exec-path "/usr/local/bin/editorconfig")
+(editorconfig-mode 1)
 
 ;; Markdown
 (setq markdown-command "multimarkdown")
@@ -127,5 +127,19 @@
 (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
 
 ;; Web mode
-;(require 'mustache-mode)
-;(add-to-list 'auto-mode-alist '("\\.mustache\\'" . mustache-mode))
+(require 'mustache-mode)
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . mustache-mode))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (mustache yasnippet web-mode use-package smex smartparens sass-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

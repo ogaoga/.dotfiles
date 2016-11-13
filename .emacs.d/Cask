@@ -28,4 +28,6 @@
 (depends-on "yasnippet")
 
 (depends-on "editorconfig")
+(depends-on "mustache-mode")
+
 
