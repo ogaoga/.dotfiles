@@ -29,3 +29,5 @@
 
 (depends-on "editorconfig")
 
+(depends-on "smooth-scroll")
+

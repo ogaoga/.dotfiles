@@ -54,6 +54,10 @@
 (setq scroll-margin 8)
 (setq scroll-preserve-screen-position t)
 
+;;; smooth-scroll
+(require 'smooth-scroll)
+(smooth-scroll-mode t)
+
 ;; Do not return at right edge
 (setq-default truncate-lines t)
 (setq truncate-partial-width-windows t)
@@ -76,6 +80,8 @@
 
 ;(global-set-key "\C-j" 'dabbrev-completion)
 (global-set-key "\C-j" 'dabbrev-expand)
+
+(global-set-key "√" 'scroll-down)
 
 ;; tab
 ;;(setq-default tab-width 2)
