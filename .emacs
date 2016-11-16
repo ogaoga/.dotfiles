@@ -115,9 +115,10 @@
 (add-to-list 'auto-mode-alist '("\\.jade$" . jade-mode))
 
 ;; Sass
-(require 'sass-mode)
-(add-to-list 'auto-mode-alist '("\\.scss$" . sass-mode))
-(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
+;(require 'scss-mode)
+;(add-to-list 'auto-mode-alist '("\\.scss$" . scss-mode))
+;(require 'sass-mode)
+;(add-to-list 'auto-mode-alist '("\\.sass$" . sass-mode))
 
 ;; Markdown
 (autoload 'markdown-mode "markdown-mode"
@@ -131,6 +132,8 @@
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.css\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.sass\\'" . web-mode))
 
 ;; Web mode
 (require 'mustache-mode)
@@ -142,7 +145,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (mustache yasnippet web-mode use-package smex smartparens sass-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
+    (mustache yasnippet web-mode use-package smex smartparens sass-mode scss-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
