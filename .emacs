@@ -145,10 +145,27 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (mustache yasnippet web-mode use-package smex smartparens sass-mode scss-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
+    (git-gutter+ mustache yasnippet web-mode use-package smex smartparens sass-mode scss-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; --- git-gutter-puls ---
+(global-git-gutter+-mode)
+(setq git-gutter+-modified-sign "  ") ;; two space
+(setq git-gutter+-added-sign "++")    ;; multiple character is OK
+(setq git-gutter+-deleted-sign "--")
+(set-face-background 'git-gutter+-modified "purple") ;; background color
+(set-face-foreground 'git-gutter+-added "green")
+(set-face-foreground 'git-gutter+-deleted "red")
+
+(set-face-attribute 'git-gutter+-added nil
+                    :foreground "white" :background "dark green")
+(set-face-attribute 'git-gutter+-deleted nil
+                    :foreground "white" :background "dark red")
+(set-face-attribute 'git-gutter+-modified nil
+                    :foreground nil :background nil
+                    :weight 'bold :inverse-video t)
