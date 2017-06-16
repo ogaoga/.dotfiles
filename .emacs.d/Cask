@@ -30,6 +30,4 @@
 (depends-on "editorconfig")
 (depends-on "mustache-mode")
 
-
 (depends-on "smooth-scroll")
-

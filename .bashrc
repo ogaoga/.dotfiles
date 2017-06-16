@@ -58,6 +58,7 @@ alias o='open'
 alias simpleHTTPServer='python -m SimpleHTTPServer'
 alias gitls='git status'
 alias 2utf8='nkf -Lu --utf8 --overwrite'
+alias securezip='~/.dotfiles/securezip.sh'
 
 # diff
 if [[ -x `which colordiff` ]]; then

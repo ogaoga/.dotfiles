@@ -149,3 +149,16 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; ;; emmet mode
+;; (require 'emmet-mode)
+;; (add-hook 'sgml-mode-hook 'emmet-mode) ;; マークアップ言語全部で使う
+;; (add-hook 'css-mode-hook  'emmet-mode) ;; CSSにも使う
+;; (add-hook 'web-mode-hook  'emmet-mode)
+;; (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; indent はスペース2個
+;; ;(setq emmet-expand-jsx-className? t) ;; default nil
+;; (eval-after-load "emmet-mode"
+;;   '(define-key emmet-mode-keymap (kbd "C-j") nil)) ;; ままにしておく
+;; ;(keyboard-translate ?\C-i ?\H-i) ;;C-i と Tabの被りを回避
+;; ;(define-key emmet-mode-keymap (kbd "H-i") 'emmet-expand-line) ;; C-i で展開
+;; (define-key emmet-mode-keymap (kbd "C-i") 'emmet-expand-line) ;; C-i で展開
