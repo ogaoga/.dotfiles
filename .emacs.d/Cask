@@ -28,6 +28,8 @@
 (depends-on "yasnippet")
 
 (depends-on "editorconfig")
+
 (depends-on "mustache-mode")
+(depends-on "scss-mode")
 
 (depends-on "smooth-scroll")
