@@ -34,3 +34,5 @@
 (depends-on "scss-mode")
 
 (depends-on "smooth-scroll")
+
+(depends-on "yaml-mode")
