@@ -15,8 +15,10 @@ Requirement
   * `$ brew install bash-completion`
 * maltimarkdonw
   * `$ brew install multimarkdown`
+* typescript-tools
+  * `$ npm install -g clausreinke/typescript-tools`
   
 License
 ====
 
-Copyright (c) 2015 ogaoga.org. Licensed under the [MIT License](LICENSE).
+Copyright (c) 2018 ogaoga.org. Licensed under the [MIT License](LICENSE).

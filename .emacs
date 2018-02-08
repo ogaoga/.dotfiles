@@ -135,6 +135,15 @@
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.sass\\'" . web-mode))
 
+;; TypeScript mode
+(require 'typescript-mode)
+(add-to-list 'auto-mode-alist '("\\.ts[x]?\\'" . typescript-mode))
+(require 'tss)
+(setq tss-popup-help-key "C-:")
+(setq tss-jump-to-definition-key "C->")
+(setq tss-implement-definition-key "C-c i")
+(tss-config-default)
+
 ;; Web mode
 (require 'mustache-mode)
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . mustache-mode))
@@ -166,20 +175,20 @@
 ;; ;(define-key emmet-mode-keymap (kbd "H-i") 'emmet-expand-line) ;; C-i で展開
 ;; (define-key emmet-mode-keymap (kbd "C-i") 'emmet-expand-line) ;; C-i で展開
 
-;; --- git-gutter-puls ---
-(global-git-gutter+-mode)
-(setq git-gutter+-modified-sign "  ") ;; two space
-(setq git-gutter+-added-sign "++")    ;; multiple character is OK
-(setq git-gutter+-deleted-sign "--")
-(set-face-background 'git-gutter+-modified "purple") ;; background color
-(set-face-foreground 'git-gutter+-added "green")
-(set-face-foreground 'git-gutter+-deleted "red")
+;; ;; --- git-gutter-puls ---
+;; (global-git-gutter+-mode)
+;; (setq git-gutter+-modified-sign "  ") ;; two space
+;; (setq git-gutter+-added-sign "++")    ;; multiple character is OK
+;; (setq git-gutter+-deleted-sign "--")
+;; (set-face-background 'git-gutter+-modified "purple") ;; background color
+;; (set-face-foreground 'git-gutter+-added "green")
+;; (set-face-foreground 'git-gutter+-deleted "red")
 
-(set-face-attribute 'git-gutter+-added nil
-                    :foreground "white" :background "dark green")
-(set-face-attribute 'git-gutter+-deleted nil
-                    :foreground "white" :background "dark red")
-(set-face-attribute 'git-gutter+-modified nil
-                    :foreground nil :background nil
-                    :weight 'bold :inverse-video t)
+;; (set-face-attribute 'git-gutter+-added nil
+;;                     :foreground "white" :background "dark green")
+;; (set-face-attribute 'git-gutter+-deleted nil
+;;                     :foreground "white" :background "dark red")
+;; (set-face-attribute 'git-gutter+-modified nil
+;;                     :foreground nil :background nil
+;;                     :weight 'bold :inverse-video t)
 
