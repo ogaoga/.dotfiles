@@ -8,16 +8,13 @@ Requirement
   * http://cask.readthedocs.org/
   * Cask requires Emacs 24+.
     * `$ brew install emacs`
-  * `$ cask install`
-* EditorConfig
-  * `$ brew install editorconfig`
-* bash-completion
-  * `$ brew install bash-completion`
-* maltimarkdonw
-  * `$ brew install multimarkdown`
-* typescript-tools
-  * `$ npm install -g clausreinke/typescript-tools`
-  
+
+Setup
+====
+
+* `$ cd .dotfiles/`
+* `$ /bin/sh setup.sh`
+
 License
 ====
 
