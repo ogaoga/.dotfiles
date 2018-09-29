@@ -154,14 +154,16 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (git-gutter+ mustache yasnippet web-mode use-package smex smartparens sass-mode scss-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
+    (vue-html-mode vue-mode git-gutter+ mustache yasnippet web-mode use-package smex smartparens sass-mode scss-mode projectile prodigy popwin pallet nyan-mode mustache-mode multiple-cursors magit idle-highlight-mode htmlize flycheck-cask expand-region exec-path-from-shell editorconfig drag-stuff))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
+(add-hook 'mmm-mode-hook
+          (lambda ()
+            (set-face-background 'mmm-default-submode-face nil)))
 ;; ;; emmet mode
 ;; (require 'emmet-mode)
 ;; (add-hook 'sgml-mode-hook 'emmet-mode) ;; マークアップ言語全部で使う
