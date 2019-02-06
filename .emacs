@@ -88,6 +88,7 @@
 ;;(setq tab-width 2)
 (setq-default tab-width 2 indent-tabs-mode nil)
 (setq tab-width 2 indent-tabs-mode nil)
+(setq js-indent-level 2)
 
 ; don't make a .#~ file.
 (setq create-lockfiles nil)
@@ -138,11 +139,11 @@
 ;; TypeScript mode
 (require 'typescript-mode)
 (add-to-list 'auto-mode-alist '("\\.ts[x]?\\'" . typescript-mode))
-(require 'tss)
-(setq tss-popup-help-key "C-:")
-(setq tss-jump-to-definition-key "C->")
-(setq tss-implement-definition-key "C-c i")
-(tss-config-default)
+;(require 'tss)
+;(setq tss-popup-help-key "C-:")
+;(setq tss-jump-to-definition-key "C->")
+;(setq tss-implement-definition-key "C-c i")
+;(tss-config-default)
 
 ;; Web mode
 (require 'mustache-mode)

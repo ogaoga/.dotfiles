@@ -19,6 +19,7 @@ brew install editorconfig
 brew install multimarkdown
 brew install colordiff
 brew install node
+brew install git-flow
 
 npm install -g clausreinke/typescript-tools
 
