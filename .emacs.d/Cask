@@ -37,3 +37,4 @@
 (depends-on "smooth-scroll")
 
 (depends-on "yaml-mode")
+(depends-on "vue-mode")
