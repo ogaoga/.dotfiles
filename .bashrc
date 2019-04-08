@@ -69,6 +69,7 @@ fi
 
 # source
 source $HOME/.dotfiles/git-completion.bash
+source $HOME/.dotfiles/git-prompt.sh
 source $HOME/.dotfiles/git-flow-completion.bash
 source $HOME/.dotfiles/npm-completion.bash
 
