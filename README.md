@@ -4,10 +4,10 @@ Requirement
 
 * Homebrew
   * http://brew.sh/
-* Cask for Emacs.
-  * http://cask.readthedocs.org/
-  * Cask requires Emacs 24+.
-    * `$ brew install emacs`
+* Node.js
+  * https://nodejs.org/
+* Emacs (Cask requires Emacs 24+)
+  * `$ brew install emacs`
 
 Setup
 ====
@@ -18,4 +18,4 @@ Setup
 License
 ====
 
-Copyright (c) 2018 ogaoga.org. Licensed under the [MIT License](LICENSE).
+Copyright (c) 2019 ogaoga.org. Licensed under the [MIT License](LICENSE).

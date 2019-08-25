@@ -1,0 +1,3 @@
+
+# Prompt
+PROMPT='[%n@%~] '
