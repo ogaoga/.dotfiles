@@ -2,12 +2,9 @@
 Requirement
 ====
 
+* zsh (specify `/bin/zsh` in the preference of terminal app if needed.)
 * Homebrew
   * http://brew.sh/
-* Node.js
-  * https://nodejs.org/
-* Emacs (Cask requires Emacs 24+)
-  * `$ brew install emacs`
 
 Setup
 ====
