@@ -5,7 +5,6 @@ DOTFILESDIR=$HOME/.dotfiles
 cd $HOME
 ln -s $DOTFILESDIR/.zshrc
 ln -s $DOTFILESDIR/.zshenv
-ln -s $DOTFILESDIR/.inputrc
 ln -s $DOTFILESDIR/.emacs
 ln -s $DOTFILESDIR/.emacs.d
 cp -n $DOTFILESDIR/.gitconfig.template    $DOTFILESDIR/.gitconfig
