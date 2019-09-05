@@ -3,7 +3,7 @@
 set -o ignoreeof
 
 # Don't put duplicate lines in the history.
-# export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoredups
 
 # Don't make core file
 ulimit -c 0
@@ -12,7 +12,18 @@ ulimit -c 0
 umask 022
 
 # Prompt
-PROMPT='[%n@%~] '
+setopt PROMPT_SUBST ; PS1='[%n@%c$(__git_ps1 " (%s)")]\$ '
+
+## enable color
+autoload -Uz colors
+colors
+
+## enable completion
+autoload -Uz compinit
+compinit
+
+# ignore upper/lower cases
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
 
 # ========================================================
 # aliases
@@ -40,7 +51,5 @@ else
 fi
 
 # source
-# source $HOME/.dotfiles/git-completion.bash
-# source $HOME/.dotfiles/git-prompt.sh
-# source $HOME/.dotfiles/git-flow-completion.bash
-# source $HOME/.dotfiles/npm-completion.bash
+source $HOME/.dotfiles/git-prompt.sh
+source $HOME/.dotfiles/git-flow-completion.zsh
