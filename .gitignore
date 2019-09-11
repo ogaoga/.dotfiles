@@ -12,5 +12,8 @@
 .emacs.d/.cask/
 .emacs.d/tramp
 
+# VSCode
+.vscode/extensions
+
 # Other configs
 .gitconfig
