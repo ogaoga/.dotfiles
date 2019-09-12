@@ -17,6 +17,7 @@ brew install multimarkdown
 brew install colordiff
 brew install node
 brew install git-flow
+brew install anyenv
 
 cd $DOTFILESDIR/.emacs.d
 cask install

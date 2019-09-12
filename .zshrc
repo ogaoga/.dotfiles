@@ -1,4 +1,7 @@
 
+# SHELL
+export SHELL="/bin/zsh"
+
 # Don't use ^D to exit
 set -o ignoreeof
 
@@ -53,3 +56,6 @@ fi
 # source
 source $HOME/.dotfiles/git-prompt.sh
 source $HOME/.dotfiles/git-flow-completion.zsh
+
+# anyenv
+eval "$(anyenv init -)"
