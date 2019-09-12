@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "block",
+    "editor.dragAndDrop": false,
+    "editor.renderIndentGuides": false,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "terminal.integrated.shell.osx": "/bin/zsh"
+}

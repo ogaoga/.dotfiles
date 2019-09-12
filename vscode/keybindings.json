@@ -1,0 +1,17 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+l",
+    "command": "setSelection"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "undo",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+z",
+    "command": "-undo",
+    "when": "textInputFocus && !editorReadonly"
+  }
+]
