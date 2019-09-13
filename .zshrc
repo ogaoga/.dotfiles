@@ -22,8 +22,10 @@ autoload -Uz colors
 colors
 
 ## enable completion
-autoload -Uz compinit
-compinit
+
+# completion for docker
+fpath=(~/.dotfiles/completion $fpath)
+autoload -Uz compinit && compinit -i
 
 # ignore upper/lower cases
 zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}'
@@ -55,7 +57,7 @@ fi
 
 # source
 source $HOME/.dotfiles/git-prompt.sh
-source $HOME/.dotfiles/git-flow-completion.zsh
+source $HOME/.dotfiles/completion/git-flow-completion.zsh
 
 # anyenv
 eval "$(anyenv init -)"

@@ -13,5 +13,30 @@
     "key": "cmd+z",
     "command": "-undo",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-emacs.C-j",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-closeFindWidget",
+    "when": "editorFocus && findWidgetVisible"
   }
 ]
