@@ -1,27 +1,34 @@
 #!/bin/sh
 
-DOTFILESDIR=$HOME/.dotfiles
+DOTFILESDIR="$HOME/.dotfiles"
 
 cd $HOME
-ln -s $DOTFILESDIR/.bash_profile
-ln -s $DOTFILESDIR/.bashrc
-cp -n $DOTFILESDIR/.bashrc_local.template $DOTFILESDIR/.bashrc_local
-ln -s $DOTFILESDIR/.bashrc_local
-ln -s $DOTFILESDIR/.inputrc
-ln -s $DOTFILESDIR/.emacs
-ln -s $DOTFILESDIR/.emacs.d
-cp -n $DOTFILESDIR/.gitconfig.template    $DOTFILESDIR/.gitconfig
-ln -s $DOTFILESDIR/.gitconfig
+ln -s "$DOTFILESDIR/.zshrc"
+ln -s "$DOTFILESDIR/.zshenv"
+ln -s "$DOTFILESDIR/.emacs"
+ln -s "$DOTFILESDIR/.emacs.d"
+cp -n "$DOTFILESDIR/.gitconfig.template" "$DOTFILESDIR/.gitconfig"
+ln -s "$DOTFILESDIR/.gitconfig"
+ln -s "$DOTFILESDIR/.vscode"
 
+brew install emacs
 brew install cask
-brew install bash-completion
 brew install editorconfig
 brew install multimarkdown
 brew install colordiff
 brew install node
 brew install git-flow
+brew install anyenv
 
-npm install -g clausreinke/typescript-tools
-
-cd $DOTFILESDIR/.emacs.d
+cd "$DOTFILESDIR/.emacs.d"
 cask install
+
+# for vscode
+VSCODEDIR="$HOME/Library/Application Support/Code/User/"
+if [ -d "$VSCODEDIR" ]; then
+    cd "$VSCODEDIR"
+    rm settings.json
+    ln -s "$DOTFILESDIR/vscode/settings.json"
+    rm keybindings.json
+    ln -s "$DOTFILESDIR/vscode/keybindings.json"
+fi

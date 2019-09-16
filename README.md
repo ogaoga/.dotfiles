@@ -2,12 +2,9 @@
 Requirement
 ====
 
+* zsh (specify `/bin/zsh` in the preference of terminal app if needed.)
 * Homebrew
   * http://brew.sh/
-* Cask for Emacs.
-  * http://cask.readthedocs.org/
-  * Cask requires Emacs 24+.
-    * `$ brew install emacs`
 
 Setup
 ====
@@ -18,4 +15,4 @@ Setup
 License
 ====
 
-Copyright (c) 2018 ogaoga.org. Licensed under the [MIT License](LICENSE).
+Copyright (c) 2019 ogaoga.org. Licensed under the [MIT License](LICENSE).

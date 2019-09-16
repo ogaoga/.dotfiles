@@ -18,7 +18,8 @@
 ;(load "~/.emacs_local")
 
 ;; cask
-(require 'cask)
+;(require 'cask)
+(require 'cask "/usr/local/opt/cask/cask.el")
 (cask-initialize)
 
 ;(setq completion-ignore-case t)
