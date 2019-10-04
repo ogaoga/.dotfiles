@@ -48,6 +48,8 @@ alias gitls='git status'
 alias 2utf8='nkf -Lu --utf8 --overwrite'
 alias securezip='~/.dotfiles/securezip.sh'
 
+alias fixdocker='screen -f ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
+
 # diff
 if [[ -x `which colordiff` ]]; then
     alias diff='colordiff -u'
