@@ -1,18 +1,15 @@
+# Requirement
 
-Requirement
-====
+- zsh
+  - specify `/bin/zsh` in the preference of terminal app if needed.
+- [Homebrew](http://brew.sh/)
+- [nvm](https://github.com/nvm-sh/nvm)
 
-* zsh (specify `/bin/zsh` in the preference of terminal app if needed.)
-* Homebrew
-  * http://brew.sh/
+# Setup
 
-Setup
-====
+- `$ cd .dotfiles/`
+- `$ /bin/sh setup.sh`
 
-* `$ cd .dotfiles/`
-* `$ /bin/sh setup.sh`
-
-License
-====
+# License
 
 Copyright (c) 2019 ogaoga.org. Licensed under the [MIT License](LICENSE).
