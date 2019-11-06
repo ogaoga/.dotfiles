@@ -15,7 +15,7 @@
     "when": "textInputFocus && !editorReadonly"
   },
   {
-    "key": "ctrl+cmd+space",
+    "key": "ctrl+shift+alt+cmd+enter",
     "command": "editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
@@ -28,5 +28,36 @@
     "key": "ctrl+j",
     "command": "-closeFindWidget",
     "when": "editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "extension.setMark"
+  },
+  {
+    "key": "ctrl+cmd+i",
+    "command": "emacs-mcx.executeCommands"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-emacs-mcx.executeCommands"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+]",
+    "command": "-editor.action.indentLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "editor.action.reindentlines"
   }
 ]
