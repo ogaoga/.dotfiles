@@ -16,9 +16,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.codeActionsOnSaveTimeout": 1000,
     "editor.formatOnSaveTimeout": 1000,
-    "prettier.printWidth": 120,
-    "prettier.singleQuote": true,
-    "prettier.trailingComma": "es5",
     "files.autoSaveDelay": 2000,
     "eslint.autoFixOnSave": true,
     "eslint.validate": [
@@ -32,5 +29,24 @@
             "language": "typescriptreact",
             "autoFix": true
         }
-    ]
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "editor.autoClosingQuotes": "beforeWhitespace",
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single"
 }
