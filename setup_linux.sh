@@ -12,7 +12,8 @@ cp -n "$DOTFILESDIR/.gitconfig.template" "$DOTFILESDIR/.gitconfig"
 ln -s "$DOTFILESDIR/.gitconfig"
 ln -s "$DOTFILESDIR/.vscode"
 
-brew install emacs
+# brew install emacs
+yum install emacs
 
 # brew install cask
 curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
