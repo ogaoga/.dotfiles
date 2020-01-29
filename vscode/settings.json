@@ -42,11 +42,21 @@
     "[json]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.autoClosingBrackets": "beforeWhitespace",
-    "editor.autoClosingQuotes": "beforeWhitespace",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
     "html.autoClosingTags": false,
     "javascript.autoClosingTags": false,
     "typescript.autoClosingTags": false,
     "javascript.preferences.quoteStyle": "single",
-    "typescript.preferences.quoteStyle": "single"
+    "typescript.preferences.quoteStyle": "single",
+    "editor.autoIndent": false,
+    "prettier.trailingComma": "es5",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "prettier.singleQuote": true,
+    "prettier.useEditorConfig": false,
+    "files.associations": {
+        "*.py": "python"
+    }
 }

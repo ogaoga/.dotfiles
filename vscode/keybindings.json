@@ -1,10 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
-    "key": "ctrl+space",
-    "command": "setSelection"
-  },
-  {
     "key": "ctrl+z",
     "command": "undo",
     "when": "textInputFocus && !editorReadonly"
@@ -28,10 +24,6 @@
     "key": "ctrl+j",
     "command": "-closeFindWidget",
     "when": "editorFocus && findWidgetVisible"
-  },
-  {
-    "key": "ctrl+space",
-    "command": "extension.setMark"
   },
   {
     "key": "ctrl+cmd+i",
