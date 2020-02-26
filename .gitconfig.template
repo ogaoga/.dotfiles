@@ -2,3 +2,8 @@
   ui = true
 [alias]
   co = checkout
+[core]
+	editor = emacs -nw
+  excludesfile = ~/.dotfiles/.gitignore_global
+[fetch]
+  prune = true

@@ -48,6 +48,8 @@ alias gitls='git status'
 alias 2utf8='nkf -Lu --utf8 --overwrite'
 alias securezip='~/.dotfiles/securezip.sh'
 
+alias fixdocker='screen -f ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
+
 # diff
 if [[ -x `which colordiff` ]]; then
     alias diff='colordiff -u'
@@ -65,3 +67,13 @@ eval "$(anyenv init -)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pyenv & virtualenv
+export PYENV_ROOT=$HOME/.pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# read local bashrc
+if [ -f ~/.zshrc_local ]; then
+    . ~/.zshrc_local
+fi

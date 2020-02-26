@@ -4,13 +4,60 @@
     "editor.tabSize": 2,
     "editor.cursorStyle": "block",
     "editor.dragAndDrop": false,
-    "editor.renderIndentGuides": false,
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "terminal.integrated.shell.osx": "/bin/zsh",
     "workbench.startupEditor": "newUntitledFile",
-    "javascript.preferences.quoteStyle": "single",
     "editor.minimap.enabled": false,
-    "window.zoomLevel": 0
+    "workbench.tree.indent": 16,
+    "editor.renderIndentGuides": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.zoomLevel": 1,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSaveTimeout": 1000,
+    "editor.formatOnSaveTimeout": 1000,
+    "files.autoSaveDelay": 2000,
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "editor.autoIndent": false,
+    "prettier.trailingComma": "es5",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "prettier.singleQuote": true,
+    "prettier.useEditorConfig": false,
+    "files.associations": {
+        "*.py": "python"
+    }
 }

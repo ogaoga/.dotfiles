@@ -4,6 +4,7 @@ DOTFILESDIR="$HOME/.dotfiles"
 
 cd $HOME
 ln -s "$DOTFILESDIR/.zshrc"
+cp -n "$DOTFILESDIR/.zshrc_local.template" "$HOME/.zshrc_local"
 ln -s "$DOTFILESDIR/.zshenv"
 ln -s "$DOTFILESDIR/.emacs"
 ln -s "$DOTFILESDIR/.emacs.d"
