@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -eu
+
 DOTFILESDIR="$HOME/.dotfiles"
 
 cd $HOME
@@ -20,6 +22,8 @@ brew install colordiff
 brew install node
 brew install git-flow
 brew install anyenv
+
+anyenv install --init
 
 cd "$DOTFILESDIR/.emacs.d"
 cask install
