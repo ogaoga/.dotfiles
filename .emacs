@@ -56,8 +56,8 @@
 (setq scroll-preserve-screen-position t)
 
 ;;; smooth-scroll
-(require 'smooth-scroll)
-(smooth-scroll-mode t)
+;(require 'smooth-scroll)
+;(smooth-scroll-mode t)
 
 ;; Do not return at right edge
 (setq-default truncate-lines t)
