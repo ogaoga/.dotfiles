@@ -1,70 +1,65 @@
 {
-  "workbench.colorTheme": "Default Light+",
-  "files.autoSave": "afterDelay",
-  "editor.tabSize": 2,
-  "editor.cursorStyle": "block",
-  "editor.dragAndDrop": false,
-  "editor.formatOnType": true,
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "workbench.startupEditor": "newUntitledFile",
-  "editor.minimap.enabled": false,
-  "workbench.tree.indent": 16,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.codeActionsOnSaveTimeout": 1000,
-  "editor.formatOnSaveTimeout": 1000,
-  "files.autoSaveDelay": 2000,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "typescript",
-      "autoFix": true
+    "workbench.colorTheme": "Default Light+",
+    "files.autoSave": "afterDelay",
+    "editor.tabSize": 2,
+    "editor.cursorStyle": "block",
+    "editor.dragAndDrop": false,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.tree.indent": 16,
+    "editor.renderIndentGuides": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "window.zoomLevel": 0,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSaveTimeout": 1000,
+    "editor.formatOnSaveTimeout": 1000,
+    "files.autoSaveDelay": 2000,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "typescript",
+            "autoFix": true
+        },
+        {
+            "language": "typescriptreact",
+            "autoFix": true
+        }
+    ],
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.autoClosingBrackets": "never",
-  "editor.autoClosingQuotes": "never",
-  "html.autoClosingTags": false,
-  "javascript.autoClosingTags": false,
-  "typescript.autoClosingTags": false,
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single",
-  "editor.autoIndent": "advanced",
-  "prettier.trailingComma": "es5",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true
-  },
-  "prettier.useEditorConfig": false,
-  "files.associations": {
-    "*.py": "python"
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "python.dataScience.askForKernelRestart": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.mypyEnabled": true,
-  "python.formatting.provider": "black",
-  "prettier.singleQuote": true,
-  "editor.guides.indentation": false,
-  "redhat.telemetry.enabled": false,
-  "window.zoomLevel": 1
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingQuotes": "never",
+    "html.autoClosingTags": false,
+    "javascript.autoClosingTags": false,
+    "typescript.autoClosingTags": false,
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "editor.autoIndent": false,
+    "prettier.trailingComma": "es5",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "prettier.singleQuote": true,
+    "prettier.useEditorConfig": false,
+    "files.associations": {
+        "*.py": "python"
+    },
+    "editor.minimap.enabled": false,
+    "prettier.vueIndentScriptAndStyle": true,
+    "javascript.format.enable": false,
+    "prettier.requireConfig": true
 }

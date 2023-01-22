@@ -44,10 +44,12 @@ alias ..='cd ..'
 alias o='open'
 
 alias httpserver='python3 -m http.server'
+alias simpleHTTPServer='python3 -m http.server'
 alias gitls='git status'
 alias 2utf8='nkf -Lu --utf8 --overwrite'
 alias securezip='~/.dotfiles/securezip.sh'
 
+alias gitremote='git remote -v | head -1 | sed -E "s/^[^@]+@([^:]+):(.+)\.git.+$/https:\/\/\1\/\2/" | xargs open'
 alias fixdocker='screen -f ~/Library/Containers/com.docker.docker/Data/vms/0/tty'
 
 # diff
