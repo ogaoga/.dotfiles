@@ -43,7 +43,7 @@ alias rm='rm -i '
 alias ..='cd ..'
 alias o='open'
 
-alias simpleHTTPServer='python -m SimpleHTTPServer'
+alias httpserver='python3 -m http.server'
 alias gitls='git status'
 alias 2utf8='nkf -Lu --utf8 --overwrite'
 alias securezip='~/.dotfiles/securezip.sh'
